@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai 3</title>
+</head>
+<body>
+	<h1>Bấm f12 -> console để theo dõi kết quả</h1>
+	<script type="text/javascript">
+		let arr = [1,6516,12,2,32,5,32,2,23,1561,56132,1321,2020,22];
+		let max = arr[0], sum = 0,average = 0;
+		for(let i = 0;i<arr.length;i++){
+			if(max<arr[i]){
+				max = arr[i];
+				
+			}
+			sum+=arr[i];
+		}
+		average = sum/arr.length;
+		console.log("Số lớn nhất trong mảng là "+ max + " giá trị trung bình " + average);
+	</script>
+</body>
+</html>

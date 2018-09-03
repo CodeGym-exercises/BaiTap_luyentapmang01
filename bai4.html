@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai 4</title>
+</head>
+<body>
+	<h1>Bấm f12 -> console để theo dõi kết quả</h1>
+	<script type="text/javascript">
+		let num = Number(prompt("Nhập vào số lượng phần tử "));
+		let arr = [];
+		for(let i = 0;i<num;i++){
+			arr[i] =  Number(prompt("Nhập vào phần tử thứ "+ i));
+		}
+		console.log(arr);
+		let new_arr = [];
+		for(let i = 0;i<num;i++){
+			new_arr[i] = arr.pop();
+		}
+		console.log(new_arr);
+	</script>
+</body>
+</html>

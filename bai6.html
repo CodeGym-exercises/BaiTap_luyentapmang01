@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai 6</title>
+</head>
+<body>
+	<h1>Bấm f12 -> console để theo dõi kết quả</h1>
+	<script type="text/javascript">
+		let num = Number(prompt("Nhập vào số lượng phần tử "));
+		let arr = [];
+		for(let i = 0;i<num;i++){
+			arr[i] =  Number(prompt("Nhập vào phần tử thứ "+ i));
+		}
+		let v = Number(prompt("Nhập phần tử v "));
+		console.log(arr);
+		let value = false;
+		for(let i = 0;i<num;i++){
+			if(v==arr[i]){
+				value = true;
+			}
+		}
+		if(value){
+			console.log("v is in the array");
+		}else{
+			console.log("v is not in the array");
+		}
+		
+	</script>
+</body>
+</html>
